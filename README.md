@@ -81,11 +81,12 @@ To see a detailed explanation of this contract, read the [Code Explanation](#sma
      - **Sepolia Router Address:** `0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59`
    - You can find the addresses for each network on the [Supported Networks](https://docs.chain.link/ccip/supported-networks) page.
    - Click Deploy and confirm the transaction in MetaMask.
+   
    ![deploy receiver ethereum sepolia diagram](./images/deploy-receiver-ethereum-sepolia.png)
 
    - After you confirm the transaction, the contract address appears as the second item in the Deployed Contracts list. Copy this contract address.
 
-      ![deploy receiver ethereum sepolia diagram](./images/deployed-receiver-contract.png)
+    ![deploy receiver ethereum sepolia diagram](./images/deployed-receiver-contract.png)
 
 
 ---
