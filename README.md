@@ -49,13 +49,15 @@ To see a detailed explanation of this contract, read the [Code Explanation](#sma
    - You can find both of these addresses on the [Supported Networks](https://docs.chain.link/ccip/supported-networks) page. The LINK token contract address is also listed on the [LINK Token Contracts](https://docs.chain.link/resources/link-token-contracts) page
      - **Metis sepolia Router Address:** `0xaCdaBa07ECad81dc634458b98673931DD9d3Bc14`
      - **Metis sepolia LINK Address:** `0x9870D6a0e05F867EAAe696e106741843F7fD116D`
+     ![deploy sender metis sepolia diagram](./images/deploy-sender-metis-sepolia.png)
    - Click the transact button to deploy the contract. MetaMask prompts you to confirm the transaction. Check the transaction details to make sure you are deploying the contract to Metis Sepolia.
    - After you confirm the transaction, copy the contract address from Deployed Contracts list.
+    ![deployed sender metis sepolia diagram](./images/deployed-sender-contract.png)
 
 
 4. **Fund the Contract with LINK:**
    - After deployment, copy the deployed contract address.
-   - Transfer 50 LINK to the sender contract using MetaMask to cover CCIP fees.
+   - Transfer 5 LINK to the sender contract using MetaMask to cover CCIP fees.
 
 ---
 
@@ -79,10 +81,15 @@ To see a detailed explanation of this contract, read the [Code Explanation](#sma
      - **Sepolia Router Address:** `0x0BF3dE8c5D3e8A2B34D2BEeB17ABfCeBaf363A59`
    - You can find the addresses for each network on the [Supported Networks](https://docs.chain.link/ccip/supported-networks) page.
    - Click Deploy and confirm the transaction in MetaMask.
+   ![deploy receiver ethereum sepolia diagram](./images/deploy-receiver-ethereum-sepolia.png)
+
    - After you confirm the transaction, the contract address appears as the second item in the Deployed Contracts list. Copy this contract address.
 
+      ![deploy receiver ethereum sepolia diagram](./images/deployed-receiver-contract.png)
+
+
 ---
-You now have one sender contract on Metis Sepolia and one receiver contract on Ethereum Sepolia. You sent 50 LINK to the sender contract to pay the CCIP fees. Next, send data from the sender contract to the receiver contract.
+You now have one sender contract on Metis Sepolia and one receiver contract on Ethereum Sepolia. You sent 5 LINK to the sender contract to pay the CCIP fees. Next, send data from the sender contract to the receiver contract.
 
 ---
 
@@ -99,6 +106,9 @@ You now have one sender contract on Metis Sepolia and one receiver contract on E
    - `receiver`: Enter the deployed receiver contract address on Ethereum Sepolia.
    - `text`: Enter the string you want to send (e.g., `"Hello World!"`).
 
+      ![sendmessage diagram](./images/sendmessage.png)
+
+
 3. **Send the Message:**
    - Click Transact to send the message from Metis to Ethereum Sepolia.
    - Confirm the transaction in MetaMask.
@@ -111,11 +121,19 @@ You now have one sender contract on Metis Sepolia and one receiver contract on E
 
    - Copy the transaction hash and visit the [CCIP Explorer](https://ccip.chain.link/).
    - Paste the transaction hash to monitor the status of the cross-chain message.
+   - When the status of the transaction is marked with a "Success" status, the CCIP transaction and the destination transaction are complete.
+
+![CCIP Transaction](./images/CCIPtx.png)
+It usually takes around 30 minutes to complete transactin please have some patience!
 
 2. **Read Data on Ethereum Sepolia:**
    - Switch to the Ethereum Sepolia network in MetaMask.
    - In Remix, expand the deployed receiver contract and click the `getLastReceivedMessageDetails` function.
    - The data sent from Metis should now be stored and displayed (e.g., `"Hello World!"`).
+
+![received message](./images/getmsg.png)
+
+Congratulations! You just sent your first cross-chain data using CCIP. Next, examine the Smart Contract Overview to learn how this contract works.
 
 ---
 
