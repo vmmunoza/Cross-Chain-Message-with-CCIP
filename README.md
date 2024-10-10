@@ -49,7 +49,7 @@ To see a detailed explanation of this contract, read the [Code Explanation](#sma
    - You can find both of these addresses on the [Supported Networks](https://docs.chain.link/ccip/supported-networks) page. The LINK token contract address is also listed on the [LINK Token Contracts](https://docs.chain.link/resources/link-token-contracts) page
      - **Metis sepolia Router Address:** `0xaCdaBa07ECad81dc634458b98673931DD9d3Bc14`
      - **Metis sepolia LINK Address:** `0x9870D6a0e05F867EAAe696e106741843F7fD116D`
-     ![deploy sender metis sepolia diagram](.\images\deploy-sender-metis-sepolia.png)
+     ![deploy sender metis sepolia diagram](./images/deploy-sender-metis-sepolia.png)
    - Click the transact button to deploy the contract. MetaMask prompts you to confirm the transaction. Check the transaction details to make sure you are deploying the contract to Metis Sepolia.
    - After you confirm the transaction, copy the contract address from Deployed Contracts list.
     ![deployed sender metis sepolia diagram](./images/deployed-sender-contract.png)
