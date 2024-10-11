@@ -132,7 +132,7 @@ It usually takes around 30 minutes to complete transactin please have some patie
    - In Remix, expand the deployed receiver contract and click the `getLastReceivedMessageDetails` function.
    - The data sent from Metis should now be stored and displayed (e.g., `"Hello World!"`).
 
-![received message](./images/getmsg.png)
+![received message](./images/receivemessage.png)
 
 Congratulations! You just sent your first cross-chain data using CCIP. Next, examine the Smart Contract Overview to learn how this contract works.
 
