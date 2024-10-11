@@ -130,7 +130,7 @@ It usually takes around 30 minutes to complete transactin please have some patie
 2. **Read Data on Ethereum Sepolia:**
    - Switch to the Ethereum Sepolia network in MetaMask.
    - In Remix, expand the deployed receiver contract and click the `getLastReceivedMessageDetails` function.
-   - The data sent from Metis should now be stored and displayed (e.g., `"Hello World!"`).
+   - The data sent from Metis should now be stored and displayed (e.g., `"Hello from Metis!"`).
 
 ![received message](./images/receivemessage.png)
 
