@@ -51,3 +51,5 @@ contract Receiver is CCIPReceiver {
         return (s_lastReceivedMessageId, s_lastReceivedText);
     }
 }
+
+// Check the CL documentation for Metis: https://docs.metis.io/dev/tools/oracles/chainlink
